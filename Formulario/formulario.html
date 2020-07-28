@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>La tienda de la Hinchada</title>
+<link rel="stylesheet" href="estilo/estilo.css">
+</head>
+<body>
+<main>
+<form action="" class="formulario">
+	<h1 class="formulario_h1">Formulario de Compra</h1>
+	<input type="text" class="formulario_input" required maxlength="20">
+	<label for="" class="formulario_label">Nombres</label>
+	<input type="text" class="formulario_input" required maxlength="20">
+	<label for="" class="formulario_label">Apellidos</label>
+	<input type="email" class="formulario_input" required>
+	<label for="" class="formulario_label">Correo</label>
+	<input type="text" class="formulario_input" required>
+	<label for="" class="formulario_label">Distrito</label>
+	<input type="text" class="formulario_input" required>
+	<label for="" class="formulario_label">Dirección</label>
+	<input type="text" class="formulario_input" onkeypress="return event.charCode >= 48 && event.charCode <= 57" required maxlength="9">
+	<label for="" class="formulario_label">Celular</label>
+	<input type="checkbox" class="formulario_aceptar" id="id" name="id" required value="true">
+	<label for="id" class="formulario_label">Acepto Los Terminos y Condiciones</label>
+	<input type="submit" class="formulario_enviar" value="COMPRAR">	
+</form>
+<script src="javascript/js.js"></script>
+</main>
+</body>
+</html>

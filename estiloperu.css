@@ -1,0 +1,118 @@
+@charset "utf-8";
+/* CSS Document */
+body{background-image: url(img/background-1789175_960_720.png)}
+main{
+	width: 1000px;
+	height: 1770px;
+	margin: auto;
+	background-color:hsla(269,89%,15%,0.95);
+}
+header{
+	height: 200px;
+	width: 1000px;
+}
+header img{
+	float: left;
+}
+#header{
+	margin: auto;
+
+	font-family:  "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+}
+ul, ol{
+	list-style: none;		
+}
+.nav .op{
+	margin-top: 50px;
+	margin-left: 50px;
+}
+.nav li a{	
+	font-family: 'Lobster', cursive;
+	font-size: 30px;
+	color: gold;
+	text-decoration: none;
+	padding: 0px;
+	display: block;
+}
+.nav li a:hover{
+	color:#fff;
+	transition-duration: 0.7s;
+}
+.nav > li{
+	float: left;
+}
+.nav li ul{
+	display: none;
+	position: absolute;
+	min-width: 140px;
+}
+.nav li:hover > ul{
+	display: block;
+}
+.nav li ul li{
+	position: relative;
+	right: -15px;
+}
+.nav li ul li ul{
+	right: -140px;
+	top: 0px;
+}
+article{
+	margin-top: -60px;
+}
+article h1{
+	font-family: 'Bungee Shade', cursive;
+	color: aliceblue;
+	font-size: 30px;
+	padding-left: 1em;
+}
+article img{
+	float: left;
+	margin-top: 1.5em;
+}
+hr{
+	margin-top: -25px;
+}
+article p{
+	font-size: 25px;
+	color: aliceblue;
+	text-align: justify;
+	padding: 16px;
+}
+footer{
+	font-size: 18px;
+	width: 1000px;
+    height: 169px;
+	margin-top: 80px;
+	background-color: hsla(0,0%,0%,0.71);
+}
+h3{
+	color: aliceblue;
+}
+#izquierda a{
+	text-decoration: none;
+	color: aliceblue;
+}
+#izquierda a:hover{color: red;transition: 0.5s;}
+#izquierda ul li{
+	display: list-item;
+	margin-bottom: 13px;
+}
+#izquierda{float:left;}
+#centro a{
+	text-decoration: none;
+	color: aliceblue;
+}
+#centro a:hover{color: red;transition: 0.5s;}
+#derecha{float: right;
+margin-top: -6em;}
+#izquierda{
+	margin-top: -0.8em;
+	margin-left: 1em;
+}
+#centro {
+	margin-left: 25em;
+}
+#centro h3{
+	padding-top: 0.4em;
+}

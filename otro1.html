@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>La tienda de la Hinchada</title>
+<link rel="stylesheet" href="estilopolo1.css">
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
+</head>
+<body>
+<main>
+<header>
+			<img src="img/vamos-peru-carajo.png" width="150" height="150" alt=""/>
+			<nav>
+				<div id="header">
+				 <ul class="nav">
+					<li><a href="index.html" class="op">Inicio</a></li>
+					<li><a href="nosotros.html" class="op">Nosotros</a></li>			
+					<li><a href="productos.html" class="op">Productos</a>
+						<ul>
+						   <li><a href="productos.html#polos">Polos</a></li>
+						   <li><a href="productos.html#poleras">Poleras</a></li>
+						   <li><a href="productos.html#otros">Otros</a></li>
+						</ul>
+					</li>
+					<li><a href="peru.html" class="op">Perú</a></li>
+					<li><a href="#final" class="op">Contactenos</a></li>
+				 </ul>	
+				</div>
+			</nav>
+		</header>
+  <article>
+  		<h1>Bandera</h1><hr>
+  <img src="img/producto4.jpg" width="400" height="450" alt=""/>
+	  <h1 id="bandera">Bandera del Perú: </h1>
+	  <section>
+		  <div id="chart">Características: </div>
+		  	<ol style="list-style-type: none" id="lista">
+				<li>Medidas: 50cmx30cm</li>
+				<li>Material: Tela</li>
+			</ol>
+		  <form id="multiplicar">
+			  <fieldset>
+				  <legend>Orden</legend>
+				  <ol>
+					<li>Precio(S/): <input type="number" id="Precio" value="10.00" disabled></li>
+					<li>Cantidad: <input type="number" id="Cantidad" min="0" max="10" size="10"></li>
+					<li>Código: <input type="text" id="Código"></li>
+					<li>Total(S/): <input type="text" id="resultado" size="3" disabled></li>
+				  </ol>
+			  </fieldset>
+		  </form>
+		  <button type="button" onclick="cotizar();">Cotizar</button>
+		  <script>
+			var p, c, r, code, d;
+			function cotizar() {
+			p = document.getElementById("Precio").value;
+			c = document.getElementById("Cantidad").value;
+			code = document.getElementById("Código").value;
+			switch (code) {
+				case "1234":
+					d = p*c*(5/100); break;
+				case "98732159":
+					d = p*c*(10/100); break;
+				case "HFG46F786ISIL":
+					d = p*c*(30/100); break;
+				default:
+					d = 0;break;
+			}
+				r = p*c - d;
+			document.getElementById("resultado").value = r.toFixed(2);
+			}
+		  </script>
+		  <a href="Formulario/formulario.html"><button type="button" onclick="comprar();">Realizar Compra!</button></a>
+	  </section>
+  </article>
+		<footer>
+			<div id="izquierda">
+				<h3>Productos</h3>
+				<ul>	
+					<li><a href="productos.html#polos">Polos</a></li>
+					<li><a href="productos.html#poleras">Poleras</a></li>
+					<li><a href="productos.html#otros">Otros</a></li>
+				</ul>
+		  </div>		
+			<div id="centro">
+				<h3>Explora</h3>
+				<ul><li><a href="peru.html">Perú</a></li></ul>
+			</div>		
+		  <div id="derecha">
+			<h3><dt id="final">Contactanos</dt></h3>
+			  <figure>
+			  <a href="#"><img src="img/fb.png" width="30" height="30" alt=""/></a>
+			  <a href="#"><img src="img/insta.png" width="30" height="30" alt=""/> </a>
+			  <a href="#"><img src="img/wspp.png" width="30" height="30" alt=""/> </a>
+			  <a href="#"><img src="img/twitter.png" width="30" height="30" alt=""/></a>
+			  </figure>
+		  </div>		
+		</footer>
+</main>
+</body>
+</html>
